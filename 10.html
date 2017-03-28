@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>JCES - Causalidad</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="../jcunisabana.github.io/css/bootstrap.min.css">
+				<link rel="stylesheet" href="css/theme/night.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css" >
+		<link rel="stylesheet" href="css/estilo.css">
+		<link rel="stylesheet" href="../jcunisabana.github.io/css/textos.css">
+
+		<!-- To use icons from fontawesome -->
+
+		<script src="https://use.fontvawesome.com/503e7c40b4.js"></script>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+<section   data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/d/dc/Directed_cycle.svg" data-background-size = "">
+	
+<div class="container">
+<div class="row">
+
+	<div class="highlightred col-sm-10"> 
+	<h2 class=" ">Causalidad como probabilidad</h2> 
+	       
+	</div>	
+	<div class="transbox col-sm-3" style="top:0.53cm"> 
+
+	<font size="3"><p>Juan Camilo Espejo-Serna<br> Universidad de la Sabana</p></font> 
+		
+
+	</div>	
+</div>	
+
+</div>
+		
+				</section>	
+<section><h2>Plan</h2>
+<ol>
+<li class="fragment fade-up"><a href="#/uno">La idea básica de la causalidad como probabilidad</a></li>
+
+<li class="fragment fade-up"><a href="#/dos">La noción de probabilidad</a></li>
+	
+<li class="fragment fade-up"><a href="#/tres">Determinación del tipo de relación probabilística particula</a></li>
+<li class="fragment fade-up"><a href="#/cuatro">Consideraciones problemáticas</a></li>
+
+
+	
+<li class="fragment fade-up"><a href="#/siete">Próxima lectura</a></li>
+
+
+</ol>
+
+</section>
+<!--				<section>Slide 2</section>-->
+
+<section   data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/d/dc/Directed_cycle.svg" data-background-size = "">
+
+ <h2 class="highlightred">La idea básica de la causalidad como dependencia contrafáctica</h2></section>
+				
+<section>La idea básica de la causalidad como probabilidad es que si X causa Y, X aumenta o disminuye la probabilidad de Y. </section>				
+<section>Ej: 
+El hecho de que "la bola blanca le pegue a la bola roja" aumente probabilidad de que suceda el hecho "la bola roja se mueva".  
+								</section>		
+<section>Parte de las ventajas de las teorías de la causalidad como probabilidad es que es posible modificar cualquiera de las anteriores relaciones que supuestamente dan cuanta de la relación de causalidad para que incluyan la probabildiad. Así, se puede resolver algunos de los contra-ejemplos. <br> Nosotros nos vamos a limitar a la teorías de la causalidad probabilística sencillas —mantiendo abierta la idea que, en pricipio, es posible juntarla con alguna de las otras teorías que hemos visto.</section>				
+				
+<section><h4>Teoría probabilística</h4>
+<p class="fragment">A) Un cambio en la causa genera cambios en la causa.</p>	
+	
+<p class="fragment">Un cambio en la lluvia genera cambios en los derrumbes </p><p class="fragment">B) Los cambios de los que se habla en A son cambios entendidos en términos de probabilidad</p>	
+	
+<p class="fragment">Una disminución en la lluvia hace a los derrumbes menos probables </p>	
+				</section>	
+								
+		
+				
+<section><h4>Formulación fuerte de la teoría probabilística</h4>
+	<p class="fragment">X causa Y sii hay la relación probabilística apropiada entre X y Y</p>
+				</section>					
+<section   data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/d/dc/Directed_cycle.svg" data-background-size = "">
+
+ <h2 class="highlightred">La noción de probabilidad</h2></section>
+				
+<section>Vamos a utilizar grafos para representar las relaciones de probabilidad. </section>
+				
+				
+<section  data-background-image="https://upload.wikimedia.org/wikipedia/commons/0/02/Frente_de_las_Nuevas_Monedas_Colombianas_-_2012.JPG">
+	<p class="highlightred">¿Cuál es la probabilidad de que al lanzar dos monedas salga cara en una y sello en la otra?	</p>		
+				</section>	
+				
+<section data-background-image="img/grafomonedas.png" data-background-size = "contain"> <p class="fragment current-visible highlightred">P(CX)=1/4</p>
+			<p class="fragment current-visible highlightred">P(C | C)=1</p>	
+			<p class="fragment current-visible highlightred">P(C | X)=1/2</p>	
+			<p class="fragment current-visible highlightred">P(C | CX)=1</p>	
+			<p class="fragment current-visible highlightred">P(X | CC)=0</p>	
+				
+				</section>		
+				
+				
+<section   data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/d/dc/Directed_cycle.svg" data-background-size = "">
+
+ <h2 class="highlightred">Determinación del tipo de relación probabilística particular</h2></section>
+				
+			
+<section><h3>Reichenbach</h3>
+<h4>Causa común</h4> Si las coincidencias de A y B ocurren más frecuentemente de lo que corresponde a su probabilidad aislada, entonces hay una causa común. <p class="fragment">P (AB) &gt; P(A) * P(B) entonces hay un C que causa A y B.</p>	
+<h4>Sandwich causal</h4> 	
+C está en medio de una relación causal cuando: <p class="fragment">a) 1 &gt; P(B|C) &gt; P(B|A) &gt; P(B) &gt; 0 </p>
+	<p class="fragment">b) 1 &gt; P(A|C) &gt; P(A|B) &gt; P(A) &gt; 0</p>	
+		<p class="fragment"> c) A &prod;^-1 B | C</p>	
+
+				</section>
+				
+				
+<section><h3>Good</h3>
+Critica a Reichenbach: La noción de independencia probabilística no está bien definida.			
+
+				</section>				
+<section><h3>Suppes</h3>
+B causa A si: 1) B es una causa prima facie de A y 2) B no es espúreo 
+	
+<p class="fragment">causa prima facie: B sucede después de A, P (B) &gt; 0 y  P(A|B) &gt; P(A)</p>	
+
+<p class="fragment">causa espúrea: Si hay una combinación de eventos (C) que aíslan a B tal que P(BC) &gt; 0 y P(A|BC) = P(A|C)</p>	
+				
+				</section>	
+				
+		
+				
+<section><h3>Redes Bayesianas</h3>
+				
+				<img src="img/cita%20bayesiana.png">
+				
+				</section>
+				
+<section data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/SimpleBayesNet.svg/800px-SimpleBayesNet.svg.png" data-background-size = "contain"></section>				
+				
+	
+<section   data-background="#ffffff"  data-background-image ="https://upload.wikimedia.org/wikipedia/commons/d/dc/Directed_cycle.svg" data-background-size = "">
+
+	<h2 class="highlightred">Consideraciones problemáticas</h2></section>
+				
+<section><h1>Probabilidad sin causalidad</h1></section>				
+<section>	
+Las relaciones causales dan cuenta del las relaciones de probabilidad. Pero relaciones lógica, matemátics o semánticas también pueden.	</section>	
+				
+<section>Entre mayor sea la probabildiad de hombres solteros, mayor será la probabilidad de hombres no-casados. Pero eso no quiere decir que los hombres solteros causen los hombre no-casados</section>				
+				
+
+								
+<!--
+	
+<section data-background="#ffffff">
+	<div class="container-fluid">
+	<div class="row">
+		<h2 style="color:black">Actividades semanales</h2>
+	<div class="col-sm-4" style="background-color:CornflowerBlue ;"> <h3>Domingo</h3>
+		<p><small>Subir control de lectura. (media noche) </small></p>
+		
+		</div>	
+		<div class="col-sm-4" style="background-color:indigo;"> <h3>Martes</h3>
+		<p><small>Clase. <br>Pregunta para el mini-ensayo.</small></p>
+		</div>	
+		<div class="col-sm-4" style="background-color:LightSeaGreen 	;"> <h3>Miércoles</h3>
+		<p><small>Entrega de mini-ensayo. <br>Discusión de un mini-ensayo elegido al azar. <br>Asignación lectura próxima semana.</small></p>
+		</div>	
+	<a href="../ontologiadelomental/"></a>
+	</div>
+
+	</div>
+</section>
+-->
+	
+	
+	
+<!--
+				
+				
+<section id="siete" data-transition="fade-in" data-background="#009933" data-background-transition="zoom"><h3>Próxima lectura</h3>
+	<ul>
+<li>
+Williamson, J. (2009). 'Probabilistic Theories.' En <i>The Oxford Handbook of Causation</i>. Oxford: OUP (&#9733) </li>
+	</ul>
+</section>
+-->
+
+
+
+
+
+</div>
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+
+
+<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
